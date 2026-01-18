@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - AI Surveillance</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+
+<style>
+/* ================= MISSION & VISION ================= */
+.image-text {
+  padding: 120px 0;
+  background: radial-gradient(circle at top, rgba(15,190,187,0.12), #0b0b0b 60%);
+  position: relative;
+}
+
+/* Grid Layout */
+.image-text-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+/* Image Styling */
+.image-text .image {
+  position: relative;
+}
+
+.image-text .image img {
+  width: 100%;
+  border-radius: 22px;
+  box-shadow: 
+    0 25px 60px rgba(15,190,187,0.45),
+    inset 0 0 0 1px rgba(255,255,255,0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Image Hover Effect */
+.image-text .image:hover img {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 35px 80px rgba(15,190,187,0.6);
+}
+
+/* Text Styling */
+.image-text .text h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  line-height: 1.2;
+  position: relative;
+}
+
+/* Accent Line Under Heading */
+.image-text .text h2::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  left: 0;
+  bottom: -10px;
+  border-radius: 4px;
+  background: linear-gradient(135deg, #0fbebb, #00ffc3);
+}
+
+/* Paragraph */
+.image-text .text p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #cfcfcf;
+  max-width: 520px;
+}
+
+/* Alternate layout spacing fix */
+.image-text .image-text-grid + .image-text-grid {
+  margin-top: 80px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .image-text-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .image-text .text h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .image-text .text p {
+    margin: auto;
+  }
+}
+
+</style>
+</head>
+<body>
+
+  <!-- HEADER (Same as Main Page) -->
+  <header id="header">
+    <div class="container nav">
+      <div class="logo">AI<span>Surveillance</span></div>
+
+      <!-- NAV LINKS -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <ul class="menu">
+          <li><a href="index.html">Home <img src="assets/icons/home-icon.svg" class="menu-icon" alt=""></a></li>
+          <li>
+            <a href="#solutions">Solutions <img src="assets/icons/solutions-icon.svg" class="menu-icon" alt=""></a>
+          </li>
+          <li><a href="index.html">About <img src="assets/icons/about-icon.svg" class="menu-icon" alt=""></a></li>
+          <li><a href="index.html#contact">Contact <img src="assets/icons/contact-icon.svg" class="menu-icon" alt=""></a></li>
+          <li class="mobile-btn"><a href="index.html#contact" class="btn">Request Demo</a></li>
+        </ul>
+      </nav>
+
+      <a href="index.html#contact" class="header-btn-right btn desktop-btn">Request Demo</a>
+      <div class="hamburger" id="hamburger"><div></div><div></div><div></div></div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero about-hero" data-aos="fade-up">
+    <div class="container hero-content">
+      <h1>About <span class="gradient-text">AI Surveillance</span></h1>
+      <p>We provide next-generation AI-powered surveillance solutions that ensure security, efficiency, and scalability for enterprises worldwide. Our mission is to make security intelligent and seamless.</p>
+      <a href="index.html#contact" class="btn btn-gradient">Request Demo</a>
+    </div>
+  </section>
+
+  <!-- MISSION & VISION -->
+  <section class="image-text" data-aos="fade-up">
+    <div class="container image-text-grid">
+      <div class="image">
+        <img src="images/mission.jpg" alt="Our Mission">
+      </div>
+      <div class="text">
+        <h2>Our Mission</h2>
+        <p>To deliver intelligent AI surveillance solutions that empower organizations to monitor, protect, and respond efficiently. We focus on cutting-edge technology with simplicity and reliability.</p>
+      </div>
+    </div>
+
+    <div class="container image-text-grid" style="margin-top:60px;">
+      <div class="text">
+        <h2>Our Vision</h2>
+        <p>To be the global leader in AI security solutions, making surveillance smarter, safer, and accessible to all organizations — from startups to enterprises.</p>
+      </div>
+      <div class="image">
+        <img src="images/vision.jpg" alt="Our Vision">
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM SECTION -->
+  <section class="why-us-premium" data-aos="fade-up">
+    <div class="container">
+      <div class="section-head">
+        <h2>Meet Our Team</h2>
+        <p>Our team combines expertise in AI, cybersecurity, and enterprise technology to deliver top-notch surveillance solutions.</p>
+      </div>
+
+      <div class="why-grid-premium">
+        <div class="why-card-premium">
+          <div class="icon-wrap"><img src="assets/icons/founder.svg" alt="Founder"></div>
+          <h3>John Doe</h3>
+          <p>Founder & CEO – Visionary leader driving innovation in AI-powered security solutions.</p>
+        </div>
+        <div class="why-card-premium">
+          <div class="icon-wrap"><img src="assets/icons/cto.svg" alt="CTO"></div>
+          <h3>Jane Smith</h3>
+          <p>CTO – Expert in AI algorithms, machine learning, and cloud-based surveillance infrastructure.</p>
+        </div>
+        <div class="why-card-premium">
+          <div class="icon-wrap"><img src="assets/icons/security.svg" alt="Head of Security"></div>
+          <h3>Mark Johnson</h3>
+          <p>Head of Security – Ensures enterprise-grade privacy, compliance, and secure cloud operations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta-split" data-aos="fade-up">
+    <div class="cta-split-grid">
+      <div class="cta-text">
+        <h2>Want to see AI Surveillance in action?</h2>
+        <p>Request a personalized demo to explore our AI-powered monitoring and security platform tailored to your organization.</p>
+        <a href="index.html#contact" class="btn">Request Demo</a>
+      </div>
+      <div class="cta-graphic">
+        <img src="images/demo-illustration.png" alt="Demo Illustration" class="illustration">
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-premium">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="logo">AI<span>Surveillance</span></div>
+        <p>AI-powered surveillance solutions that make security intelligent, scalable, and seamless.</p>
+        <div class="socials">
+          <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+          <a href="#"><img src="assets/icons/twitter.svg" alt="Twitter"></a>
+          <a href="#"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Email: info@aisurveillance.com</p>
+        <p>Phone: +123 456 7890</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 AI Surveillance. All rights reserved.</div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+</body>
+</html>
